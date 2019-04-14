@@ -1,1 +1,1 @@
-# STUCK.
+# STACK.
