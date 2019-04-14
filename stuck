@@ -61,8 +61,14 @@ int main (){
 
     cout << endl;
     	cout<<"==================================="<<endl;
+	cout<<"=  Tugas Pemrograman Terstruktur  ="<<endl;
+	cout<<"=               STUCK             ="<<endl;
+    	cout<<"==================================="<<endl;
+	cout<<"=                                 ="<<endl;
 	cout<<"=   Nama : Rika Ningtias Azhari   ="<<endl;
 	cout<<"=   Npm  : 1817051073             ="<<endl;
+	cout<<"=   Kelas: A                      ="<<endl;
+	cout<<"=                                 ="<<endl;
 	cout<<"==================================="<<endl;
 	cout<<"\n1. Push "<<endl;
 	cout<<"2. Pop "<<endl;
@@ -70,4 +76,45 @@ int main (){
 	cout<<"Pilihan : "; 
 	cin>>pil;
 	cout<<endl;
+	
+	switch (pil){
+	case 1 :
+	float isi;
+	int jumlah;
+	cout<<"Masukkan jumlah nilai yang ingin dijadikan Stack = ";
+	cin>>jumlah;
+	for (int i=1;i<=jumlah;i++){
+		cout<<"Masukan nilai ke "<<i<<" : ";
+		cin>>isi;
+		push(isi);
+	}
+	cout<<endl;
+	print();
+	break;
+
+	case 2:
+
+	cout<<"\n\nBerapa kali Pop yang akan dilakukan ? ";
+	cin>>jumlah;
+	for (int j=1;j<=jumlah;j++){
+		pop();
+	}
+	cout<<"\nStack yang tersisa setelah Pop : \n"<<endl;
+	print ();
+    break;
+
+    case 3:
+    	cout<<"===================================================="<<endl;
+        cout<<"= Terimakasih Telah Menggunakan Program Stuck Saya ="<<endl;
+	cout<<"=       Salam Hangat `Rika Ningtias Azhari`        ="<<endl;
+	cout<<"===================================================="<<endl;
+        break;
+
+    default :
+        cout<<"\n pilihan anda tidak ada"<<endl;
+	}
+}
+while (pil != 3);
+	return 0;
+}
 
