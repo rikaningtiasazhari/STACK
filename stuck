@@ -17,4 +17,41 @@ bool isempty(){
 	}
 }
 
+void push (float isi){
+	node *baru = new node;
+	baru->data = isi;
+	baru->selanjutnya = NULL;
+	if(isempty()){
+		palingdepan = baru;
+		palingdepan->selanjutnya = NULL;
+	}else{
+		baru -> selanjutnya = palingdepan;
+		palingdepan = baru;
+	}
+}
+
+void pop (){
+	node *copot = new node;
+	if(isempty()){
+		cout << "Tidak ada stack";
+	}else{
+		copot = palingdepan;
+		palingdepan = palingdepan->selanjutnya;
+		delete copot;
+	}
+}
+
+void print (){
+	node *bantu = palingdepan;
+	if (isempty () == 0){
+		while (bantu != NULL){
+		cout<< bantu ->data <<" ";
+		bantu = bantu ->selanjutnya;
+		}
+	}
+	else{
+		cout<<"Tidak ada stack \n";
+
+	}
+}
 
