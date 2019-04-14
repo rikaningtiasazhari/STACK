@@ -55,3 +55,19 @@ void print (){
 	}
 }
 
+int main (){
+    int pil,n;
+    do {
+
+    cout << endl;
+    	cout<<"==================================="<<endl;
+	cout<<"=   Nama : Rika Ningtias Azhari   ="<<endl;
+	cout<<"=   Npm  : 1817051073             ="<<endl;
+	cout<<"==================================="<<endl;
+	cout<<"\n1. Push "<<endl;
+	cout<<"2. Pop "<<endl;
+	cout<<"3. Keluar"<<endl;
+	cout<<"Pilihan : "; 
+	cin>>pil;
+	cout<<endl;
+
